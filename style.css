@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --amrelo-principal: #F2B705;
+    --branco: #fff;
+    --verde: #2FA84F;
+    --ambar: #B8700A;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background-image:   linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("imgs/bioleo-background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;            
+    justify-content: space-between; 
+    padding: 1.5rem 4rem;
+}
+
+.nav-bar ul{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    list-style: none;
+    font-size: 14px;
+}
+
+.nav-bar ul a{
+    position: relative;
+   text-decoration: none;
+   color: white;
+   padding-bottom: 4px;
+    transition: 0.3s;
+}
+
+.nav-bar ul a::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #f5b800; /* use a cor amarela do seu site */
+  transition: width 0.3s ease;
+}
+
+.nav-bar ul a:hover::after{
+  width: 100%;
+}
+
+.nav-bar ul a:hover{
+    color: #F2B705;
+}
+
+.nav-bar ul span{
+    color: var(--amrelo-principal);
+    border-bottom: solid var(--amrelo-principal) 2px;
+}
+
+.nav-bar ul span:hover{
+    cursor: pointer;
+}
+
+.nav-bar img {
+    width: 2rem;
+    display: block;
+}
+
+.logo-titulo{
+   display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 10px;
+    color: var(--branco);
+}
+
+.logo-titulo span{
+    color: var(--verde);
+}
+
+.texto-centro{
+    color: var(--branco);
+    margin-left: 6rem;
+    margin-top: 5rem;
+    font-size: 1.6rem;
+}
+
+.texto-centro p{
+   font-size: 2.5vh;
+   margin-top: 0.5rem;
+   
+}
+
+.btn-cadastro{
+    margin-left: 26rem;
+    margin-top: 7vh;
+}
+
+.btn-cadastro a{
+    border: solid var(--amrelo-principal) 1px;
+    text-decoration: none;
+    color: var(--branco);
+    padding: 0.5rem 1.3rem;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.btn-cadastro a:hover{
+    padding: 0.7rem 1.5rem;
+    cursor: pointer;
+    box-shadow: #F2B705 0px 0px 10px 5px;
+}
+
+.rodape{
+    margin-top: 7.1rem;
+}
+
+.rodape ul{
+    display: flex;
+    color: var(--branco);
+    padding: 2rem;
+    list-style: none;
+    gap: 3rem;
+    font-size: 0.8rem;
+}
+
+.rodape ul img{
+    width: 1rem;
+}
+
+.rodape li{
+    display: flex;
+}
+
+.rodape li img{
+    margin-right: 1vh;
+}
+
+
